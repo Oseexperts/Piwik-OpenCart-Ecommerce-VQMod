@@ -6,8 +6,8 @@
 	<author><![CDATA[Kevin Bibby / Inanecoding.co.uk]]></author>
 	<file name="catalog/controller/common/footer.php">
 		<operation>
-			<search><![CDATA[$data['powered']]]></search>
-			<add position="before"><![CDATA[
+			<search position="before"><![CDATA[$data['powered']]]></search>
+			<add ><![CDATA[
 		// BOF - Piwik Opencart mod
 		$this->load->model('tool/piwik');
 		$data['piwik_footer_text'] = $this->model_tool_piwik->getFooterText();
@@ -17,16 +17,16 @@
 	</file>
 	<file name="catalog/view/theme/*/template/common/footer.tpl">
 		<operation>
-			<search><![CDATA[</body>]]></search>
-			<add position="before"><![CDATA[
+			<search  position="before"><![CDATA[</body>]]></search>
+			<add><![CDATA[
 <?php echo $piwik_footer_text; ?>
 			]]></add>
 		</operation>
 	</file>
 	<file name="catalog/controller/checkout/cart.php">
 		<operation>
-			<search><![CDATA[$this->cart->remove(]]></search>
-			<add position="after"><![CDATA[
+			<search position="after"><![CDATA[$this->cart->remove(]]></search>
+			<add><![CDATA[
 			// BOF - Piwik Opencart mod
 			$this->load->model('tool/piwik');
 			$this->model_tool_piwik->trackEcommerceCartUpdate();
@@ -34,8 +34,8 @@
 			]]></add>
 		</operation>
 		<operation>
-			<search><![CDATA[$this->cart->update(]]></search>
-			<add position="after"><![CDATA[
+			<search position="after"><![CDATA[$this->cart->update(]]></search>
+			<add><![CDATA[
 			// BOF - Piwik Opencart mod
 			$this->load->model('tool/piwik');
 			$this->model_tool_piwik->trackEcommerceCartUpdate();
@@ -43,8 +43,8 @@
 			]]></add>
 		</operation>
 		<operation>
-			<search><![CDATA[$this->cart->add(]]></search>
-			<add position="after"><![CDATA[
+			<search position="after"><![CDATA[$this->cart->add(]]></search>
+			<add><![CDATA[
 				// BOF - Piwik Opencart mod
 				$this->load->model('tool/piwik');
 				$this->model_tool_piwik->trackEcommerceCartUpdate();
@@ -54,8 +54,8 @@
 	</file>
 	<file name="catalog/controller/checkout/success.php">
 		<operation>
-			<search><![CDATA[function index() {]]></search>
-			<add position="after"><![CDATA[
+			<search  position="after"><![CDATA[function index() {]]></search>
+			<add><![CDATA[
 		// BOF - Piwik Opencart mod
 		if ( isset($this->session->data['order_id']) and ( ! empty($this->session->data['order_id']))  ) {
 			$this->session->data['last_order_id'] = $this->session->data['order_id'];
@@ -69,8 +69,8 @@
 	</file>
 	<file name="catalog/controller/product/search.php">
 		<operation>
-			<search><![CDATA[$this->response->setOutput(]]></search>
-			<add position="before"><![CDATA[
+			<search position="before"><![CDATA[$this->response->setOutput(]]></search>
+			<add><![CDATA[
 		// BOF - Piwik Opencart mod
 		$this->load->model('tool/piwik');
 		if ( isset($product_total) ) {
