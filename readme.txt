@@ -1,3 +1,17 @@
+This is an adaptation of InaneCoding Piwik Opencart module to make it compatible with OC 2.x
+Should be compatible with OC 2 up to 2.0.1.2 version (included).
+Not tested on OC 2.0.2.x (which is still unstable) 
+
+
+Author: OpenSource Experts (http://www.expertsos.net)
+Version: 0.1
+Based on: InaneCoding Piwik OpenCart module version 1.1
+Release Date: 2015-04-28
+License:			GNU General Public License (GPL) version 3
+
+
+From orginal InaneCoding readme:
+
 ------------------------------------------------------
 InaneCoding Piwik OpenCart Ecommerce VQmod
 ------------------------------------------------------
@@ -7,16 +21,6 @@ Version:			1.1
 Release Date:		2014-06-25
 License:			GNU General Public License (GPL) version 3
 ------------------------------------------------------
-
-
-
-DONATE
-------
-I DO do this in my spare time for the good of other people - I have released this mod for free in the spirit of the Open Source community, so anything you give to support me would be most appreciated and give me that little extra push to do more features and updates for you guys :)
-Please donate if you use this mod and are able to give something:
-http://inanecoding.co.uk/donate/ :)
-
-
 
 DESCRIPTION
 -----------
@@ -43,11 +47,6 @@ If you have used a custom install path then please place the 'PiwikTracker.php' 
 
 4. The default install assumes that your OpenCart Admin directory is in the '/admin/' folder at the root of your OpenCart site.
 If you have used a custom Admin path then please place all files from '/upload/admin/' to your custom OpenCart Admin folder.
-
-5. Only tested on OpenCart 1.5.1.3, 1.5.3.1 & 1.5.4.1, 1.5.6.4 VQmod 2.1.6 & 2.1.7, and Piwik 1.12 & Piwik 2.30 (though think works down to ~1.9 ish).
-(may well work on others - please tell me what you find out!)
-
-
 
 INSTALL
 -------
@@ -86,66 +85,7 @@ LIMITATIONS
 -----------
 This is one of the first widespread release but would still benefit from further feedback. Please report any bugs found!
 1) There is no functionality (yet) to track the category during page views / cart updates / orders.
-2) Some small limitations to site search; OC 1.5.5 or newer doesn't track the search category, OC older than 1.5.5 does track the category but displays site search separate to the page view in the visitor log.
-
-
-
-VERSION HISTORY
----------------
-
-v1.1 - 2014/06/25
-Fix error messages for undefined variables; checks GET values and other array elements are set before using.
-Fixed 'mod disabled' footer comment so it doesn't get included in visible HTML (thanks github user glennw!).
-Fixed minor error in Readme Install HTTP/HTTPS instructions.
-
-v1.0 - 2014/02/17
-First version to be listed on opencart.com extension store (jump to v1.0).
-Order tracking now called from success page (fixes issue with order attributed to payment processor).
-Global enable/disable setting on admin page now implemented.
-New search tracking feature!
-Added checks; avoids some common admin settings errors and improves uninstall.
-Other minor changes (see github for full commit list).
-
-v0.4 - 2013/09/16
-Fixed bug 'HTTP_REFERRER' undefined index error.
-Added option to use Piwik Proxy Hide Url script to obfuscate the URL in the javascript code.
-Modified VQmod XML file so will now play nicely with custom themes.
-
-v0.3 - 2013/05/28
-First release of admin backend feature.
-Arranged source files in an opencart folder structure for easy uploading.
-PiwikTracker.php file now included for easier install.
-
-v0.2 - 2012/11/04
-Fixed a bug where the ecommerce action would sometimes not get attributed to the correct visitorID.
-Improved Installation Instructions.
-
-v0.1 - 2012/10/20
-First pre-release version.
-Basic Ecommerce functionality.
-No category reporting.
-No admin back-end
-
-
-
-SUPPORT
--------
-I'm happy to help if you have any problems (though can't promise large amounts of time).
-I'm also keen to get your feedback (dont be afraid to be critical if I've done something wrong!).
-It would be great to hear of your experiences and what could be improved.
-You can contact me using the form on http://inanecoding.co.uk/contact/
-
-You can see the current bugs/features being worked on at https://github.com/InaneCoding/Piwik-OpenCart-Ecommerce-VQMod/issues
-Feel free to raise new issues if you find anything which could be improved (or even better, contribute some code!).
-
-
-
-DONATE
-------
-I DO do this in my spare time for the good of other people - I have released this mod for free in the spirit of the Open Source community, so anything you give to support me would be most appreciated and give me that little extra push to do more features and updates for you guys :)
-Please donate if you use this mod and are able to give something:
-http://inanecoding.co.uk/donate/ :)
-
+2) Some small limitations to site search;
 
 
 WITH THANKS TO
