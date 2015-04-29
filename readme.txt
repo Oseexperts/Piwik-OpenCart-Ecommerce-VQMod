@@ -1,5 +1,5 @@
 This is an adaptation of InaneCoding Piwik Opencart module to make it compatible with OC 2.x
-Should be compatible with OC 2 up to 2.0.1.2 version (included).
+Should be compatible with OC 2 up to 2.0.1.1 version (included).
 Not tested on OC 2.0.2.x (which is still unstable) 
 
 
