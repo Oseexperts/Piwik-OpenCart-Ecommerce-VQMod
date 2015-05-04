@@ -1,16 +1,4 @@
-This is an adaptation of InaneCoding Piwik Opencart module to make it compatible with OC 2.x
-Should be compatible with OC 2 up to 2.0.1.1 version (included).
-Not tested on OC 2.0.2.x (which is still unstable) 
 
-
-Author: OpenSource Experts (http://www.expertsos.net)
-Version: 0.1
-Based on: InaneCoding Piwik OpenCart module version 1.1
-Release Date: 2015-04-28
-License:			GNU General Public License (GPL) version 3
-
-
-From orginal InaneCoding readme:
 
 ------------------------------------------------------
 InaneCoding Piwik OpenCart Ecommerce VQmod
